@@ -1,0 +1,101 @@
+Question-1 
+Class - Movie
+
+Answer:
+
+class Movie{
+    constructor(title,studio,rating){
+       this.title = title;
+       this.studio  = studio;
+       this.rating = rating;
+        
+    }
+}
+let result = new Movie('Casino Royale','Eon Productions','PG13')
+console.log(result);
+
+output:
+Movie {
+  title: 'Casino Royale',
+  studio: 'Eon Productions',
+  rating: 'PG13' }
+
+
+Question-2 
+Convert the UML diagram to Typescript class.
+Circle - Class
+
+Answer:
+
+const PI =  3.1412;
+class Circle{
+    constructor(radius,color) {
+  this.radius = radius;
+  this.color = color;
+}
+getRadius(){
+    return this.radius;
+}
+setRadius(){
+    return this.radius;
+}
+getColor(){
+    return this.color;
+}
+setColor(){
+    return this.color;
+}
+getArea(){
+    return (PI* this.radius *this.radius);
+}
+getCircumference(){
+    return (2* PI* this.radius);
+}
+}
+let r1 = new Circle(1.0,'red');
+let gr = r1.getRadius();
+console.log(gr);
+r1.radius = 5;
+let sr = r1.setRadius();
+console.log(sr)
+let gc = r1.getColor();
+console.log(gc)
+r1.color = 'blue';
+let sc  = r1.setColor();
+console.log(sc);
+let area = r1.getArea();
+console.log(area);
+let circum = r1.getCircumference();
+console.log(circum);
+
+Output:
+1
+5
+red
+blue
+78.53
+31.412
+
+
+Question-3 
+Write a “person” class to hold all the details.
+
+Answer:
+
+class Person{
+    constructor(name, age, gender, interests) {
+  this.name = name;
+  this.age = age;
+  this.gender = gender;
+  this.interests = interests;
+  }
+}
+let res = new Person('Jack', 22, 'male', ['music', 'reading']);
+console.log(res);
+
+Output:
+Person {
+  name: 'Jack',
+  age: 22,
+  gender: 'male',
+  interests: [ 'music', 'reading' ] }
